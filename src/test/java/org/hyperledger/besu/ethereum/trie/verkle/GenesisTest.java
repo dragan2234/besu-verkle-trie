@@ -47,7 +47,7 @@ public class GenesisTest {
     }
     trie.commit((location, hash, value) -> storage.put(location, value));
     Bytes32 expected =
-        Bytes32.fromHexString("0x6e077a5ba3d6b0db91ed0c35b6bb6916981d1247a2b85e811a97f400ccc0ab1c");
+        Bytes32.fromHexString("0x5e8519756841faf0b2c28951c451b61a4b407b70a5ce5b57992f4bec973173ff");
     assertThat(trie.getRootHash()).isEqualTo(expected);
   }
 }
